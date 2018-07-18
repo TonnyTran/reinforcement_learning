@@ -96,7 +96,6 @@ class BlockchainEnv(gym.Env):
         raise NotImplementedError()
 
 class MABlockchainEnv(gym.Env):
-
     def __init__(self):
         self.max_stake = 100
         self.action_space = spaces.Tuple((ActionSpace(3), ActionSpace(3), ActionSpace(3)))
@@ -105,6 +104,7 @@ class MABlockchainEnv(gym.Env):
         # self.seed()
         self.viewer = None
         self.state = None
+        self.total_stake = 200
 
         self.market_value = 1
         self.alpha = -0.01
@@ -142,11 +142,12 @@ class MABlockchainEnv(gym.Env):
 
             # mining progress
             if(sum(state) != 0):
-                win_prob = state[index]*1.0/sum(state)
+                win_prob = state[index]*1.0/self.total_stake
             else:
                 win_prob = 0
             if(win_prob > np.random.rand(1)):
                 newListStates[index] = listStates[index] - newListAction[index] + 1
+                self.total_stake += 1
             else:
                 newListStates[index] = listStates[index] - newListAction[index]
 

@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a91551b-9794-4fca-8871-ae660f97d944" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/draw_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockchain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/madql_blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/madql_blockchain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/Dueling_DDQN_result0.1.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/Dueling_DDQN_result0.1.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +21,8 @@
       <file leaf-file-name="madql_blockchain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            <state relative-caret-position="247">
+              <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -35,11 +30,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="policy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rl/policy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="128" column="26" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="list_DQNAgents.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+            <state relative-caret-position="95">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -56,8 +60,8 @@
       <file leaf-file-name="blockchain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="174">
+              <caret line="131" column="74" lean-forward="true" selection-start-line="131" selection-start-column="74" selection-end-line="131" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -65,8 +69,8 @@
       <file leaf-file-name="discrete.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="250">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -95,8 +99,8 @@
       <file leaf-file-name="draw_01.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blockchain/draw_01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="57">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -120,11 +124,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/blockchain/draw.py" />
-        <option value="$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py" />
         <option value="$PROJECT_DIR$/blockchain/list_DQNAgents.py" />
         <option value="$PROJECT_DIR$/blockchain/blockchain.py" />
-        <option value="$PROJECT_DIR$/blockchain/draw_01.py" />
+        <option value="$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py" />
         <option value="$PROJECT_DIR$/blockchain/madql_blockchain.py" />
+        <option value="$PROJECT_DIR$/blockchain/draw_01.py" />
       </list>
     </option>
   </component>
@@ -256,8 +260,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32991803" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4564533" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48898217" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
@@ -283,12 +287,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/blockchain/blockchain.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/blockchain/blockchain.py</url>
-          <line>165</line>
+          <line>166</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -306,13 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/tuple_space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rl/agents/dqn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-188">
@@ -320,31 +312,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py">
+    <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/tuple_space.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="266">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
+    <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+        <state relative-caret-position="250">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="174">
+          <caret line="131" column="74" lean-forward="true" selection-start-line="131" selection-start-column="74" selection-end-line="131" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rl/policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="128" column="26" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        <state relative-caret-position="247">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -353,8 +359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/draw_01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="57">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
