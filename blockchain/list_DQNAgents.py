@@ -36,7 +36,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
             self.listDQNAgents[index] = DQNAgent(model=model, nb_actions=nb_actions, memory=memory, processor=processor,
                 nb_steps_warmup=nb_steps_warmup, target_model_update=target_model_update, policy=policy,
-                enable_double_dqn=True, enable_dueling_network=True)
+                enable_double_dqn=False, enable_dueling_network=False)
 
         # Parameters.
         self.nb_agents = nb_agents
@@ -108,7 +108,7 @@ class ListDQNAgents(AbstractDQNAgent):
         # file_out = open('result.txt', 'wb')
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
-        version = '0.1'
+        version = '0.4'
 
         callbacks = [] if not callbacks else callbacks[:]
 
@@ -271,12 +271,15 @@ class ListDQNAgents(AbstractDQNAgent):
         self._on_train_end()
         # close file
         # file_out.close()
-        file_name = 'result' + version + '.xls'
+        file_name = 'result_v' + version + '.xls'
         if (self.listDQNAgents[0].enable_double_dqn):
             file_name = 'DDQN_' + file_name
         if (self.listDQNAgents[0].enable_dueling_network):
             file_name = 'Dueling_' + file_name
         workbook.save('../results/' + file_name)
+
+        # print market value
+        # print(env.list_v)
         return history
 
     def reset_states(self):
