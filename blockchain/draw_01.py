@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from xlrd import open_workbook
 
-book = open_workbook('../results/result_v0.4.xls')
-# book = open_workbook('../results/DDQN_result.xls')
+# book = open_workbook('../results/result_v0.5.xls')
+book = open_workbook('../results/DDQN_result_v0.6_vary.xls')
 # book = open_workbook('../results/Dueling_DDQN_result0.2.xls')
 
 sheet = book.sheet_by_index(0)

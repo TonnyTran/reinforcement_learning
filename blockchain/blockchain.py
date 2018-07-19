@@ -109,8 +109,8 @@ class MABlockchainEnv(gym.Env):
         self.market_value = 1
         self.alpha = -0.01
         self.alphaX = -0.01
-        self.ob = 0.006
-        self.os = 0.005
+        self.ob = 0.005
+        self.os = 0.006
         self.list_v = []
 
         self.steps_beyond_done = None
@@ -145,12 +145,19 @@ class MABlockchainEnv(gym.Env):
                 win_prob = state[index]*1.0/sum(state)
             else:
                 win_prob = 0
+
             if(win_prob > np.random.rand(1)):
                 newListStates[index] = listStates[index] - newListAction[index] + 1
             else:
                 newListStates[index] = listStates[index] - newListAction[index]
 
+        for index in range(len(state)):
+            action = min(listActions[index], listStates[index])
+            action = max(action, (listStates[index] - self.max_stake + 1))
+            newListAction[index] = action
+
             # caculate the reward
+        for index in range(len(state)):
             if (newListAction[index] > 0):  # selling
                 listRewards[index] = newListAction[index] * self.market_value - self.ob
             elif (newListAction[index] < 0):

@@ -22,6 +22,8 @@ class ListDQNAgents(AbstractDQNAgent):
     def __init__(self, nb_agents=3, model=None, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100,
                target_model_update=1e-2, policy=None):
 
+        # vary epsilon greedy policy
+        self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
 
         for index in range(nb_agents):
@@ -36,7 +38,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
             self.listDQNAgents[index] = DQNAgent(model=model, nb_actions=nb_actions, memory=memory, processor=processor,
                 nb_steps_warmup=nb_steps_warmup, target_model_update=target_model_update, policy=policy,
-                enable_double_dqn=False, enable_dueling_network=False)
+                enable_double_dqn=True, enable_dueling_network=False)
 
         # Parameters.
         self.nb_agents = nb_agents
@@ -103,12 +105,14 @@ class ListDQNAgents(AbstractDQNAgent):
             raise ValueError('action_repetition must be >= 1, is {}'.format(action_repetition))
 
         self.training = True
+        self.nb_steps = nb_steps
 
         # open workbook to store result
         # file_out = open('result.txt', 'wb')
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
-        version = '0.4'
+        # sheet_step = workbook.add_sheet('step')
+        version = '0.6_vary'
 
         callbacks = [] if not callbacks else callbacks[:]
 
@@ -231,6 +235,14 @@ class ListDQNAgents(AbstractDQNAgent):
                     'info': accumulated_info,
                 }
                 callbacks.on_step_end(episode_step, step_logs)
+
+                # # step reward
+                # sheet_step.write(self.step + 1, 0, str(self.step))
+                # sheet_step.write(self.step + 1, 1, str(episode_reward[0]))
+                # sheet_step.write(self.step + 1, 2, str(episode_reward[1]))
+                # sheet_step.write(self.step + 1, 3, str(episode_reward[2]))
+                # sheet_step.write(self.step + 1, 4, str(sum(episode_reward)))
+
                 episode_step += 1
                 self.step += 1
 
@@ -298,7 +310,10 @@ class ListDQNAgents(AbstractDQNAgent):
         for index in range(self.nb_agents):
             q_values = self.listDQNAgents[index].compute_q_values(state)
             if self.training:
-                action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
+                if (self.vary_eps):
+                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=1-self.step*1.0/self.nb_steps)
+                else:
+                    action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
             else:
                 action = self.listDQNAgents[index].test_policy.select_action(q_values=q_values)
             listActions[index] = action
