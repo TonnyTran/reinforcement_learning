@@ -8,12 +8,13 @@ from gym import spaces, logger
 from gym.utils import seeding
 import numpy as np
 from action_space import ActionSpace
+from discrete import Discrete
 
 class BlockchainEnv(gym.Env):
 
     def __init__(self):
         self.action_space = ActionSpace(3)
-        self.observation_space = spaces.Tuple((spaces.Discrete(100), spaces.Discrete(100), spaces.Discrete(100)))
+        self.observation_space = spaces.Tuple((Discrete(100), Discrete(100), Discrete(100)))
 
         # self.seed()
         self.viewer = None
@@ -100,7 +101,7 @@ class MABlockchainEnv(gym.Env):
     def __init__(self):
         self.max_stake = 100
         self.action_space = spaces.Tuple((ActionSpace(3), ActionSpace(3), ActionSpace(3)))
-        self.observation_space = spaces.Tuple((spaces.Discrete(self.max_stake), spaces.Discrete(self.max_stake), spaces.Discrete(self.max_stake)))
+        self.observation_space = spaces.Tuple((Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)))
 
         # self.seed()
         self.viewer = None

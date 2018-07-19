@@ -16,12 +16,14 @@ from rl.callbacks import (
 
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Flatten
-
+import math
 
 class ListDQNAgents(AbstractDQNAgent):
     def __init__(self, nb_agents=3, model=None, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100,
                target_model_update=1e-2, policy=None):
 
+        # vesion
+        self.version = '0.6_vary_sqrt'
         # vary epsilon greedy policy
         self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
@@ -112,7 +114,7 @@ class ListDQNAgents(AbstractDQNAgent):
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
         # sheet_step = workbook.add_sheet('step')
-        version = '0.6_vary'
+
 
         callbacks = [] if not callbacks else callbacks[:]
 
@@ -283,7 +285,7 @@ class ListDQNAgents(AbstractDQNAgent):
         self._on_train_end()
         # close file
         # file_out.close()
-        file_name = 'result_v' + version + '.xls'
+        file_name = 'result_v' + self.version + '.xls'
         if (self.listDQNAgents[0].enable_double_dqn):
             file_name = 'DDQN_' + file_name
         if (self.listDQNAgents[0].enable_dueling_network):
@@ -311,7 +313,7 @@ class ListDQNAgents(AbstractDQNAgent):
             q_values = self.listDQNAgents[index].compute_q_values(state)
             if self.training:
                 if (self.vary_eps):
-                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=1-self.step*1.0/self.nb_steps)
+                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=math.sqrt(1-self.step*1.0/self.nb_steps))
                 else:
                     action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
             else:
