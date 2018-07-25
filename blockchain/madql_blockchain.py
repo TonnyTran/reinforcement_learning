@@ -27,15 +27,13 @@ env = MABlockchainEnv()
 np.random.seed(123)
 # env.seed(123)
 # nb_actions = env.action_space[0].nb_actions
-nb_actions = 5
+nb_actions = env.nb_actions
 # Next, we build a very simple model.
-
-
 
 # Finally, we configure and compile our agent. You can use every built-in Keras optimizer and
 # even the metrics!
 memory = SequentialMemory(limit=50000, window_length=1)
-policy = EpsGreedyQPolicy()
+policy = EpsGreedyQPolicy(0.1)
 processor = MABlockchainProcessor()
 
 listDQNAgents = ListDQNAgents(nb_agents=3, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,

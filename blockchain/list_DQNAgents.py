@@ -23,7 +23,7 @@ class ListDQNAgents(AbstractDQNAgent):
                target_model_update=1e-2, policy=None):
 
         # vesion
-        self.version = '0.6_vary_sqrt'
+        self.version = '0.9.2.3'
         # vary epsilon greedy policy
         self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
@@ -40,7 +40,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
             self.listDQNAgents[index] = DQNAgent(model=model, nb_actions=nb_actions, memory=memory, processor=processor,
                 nb_steps_warmup=nb_steps_warmup, target_model_update=target_model_update, policy=policy,
-                enable_double_dqn=True, enable_dueling_network=False)
+                enable_double_dqn=False, enable_dueling_network=False)
 
         # Parameters.
         self.nb_agents = nb_agents
@@ -110,7 +110,6 @@ class ListDQNAgents(AbstractDQNAgent):
         self.nb_steps = nb_steps
 
         # open workbook to store result
-        # file_out = open('result.txt', 'wb')
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
         # sheet_step = workbook.add_sheet('step')
@@ -313,7 +312,7 @@ class ListDQNAgents(AbstractDQNAgent):
             q_values = self.listDQNAgents[index].compute_q_values(state)
             if self.training:
                 if (self.vary_eps):
-                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=math.sqrt(1-self.step*1.0/self.nb_steps))
+                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=(1-self.step*1.0/self.nb_steps))
                 else:
                     action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
             else:
