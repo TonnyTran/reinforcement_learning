@@ -17,18 +17,19 @@ class MABlockchainProcessor(Processor):
         return state
 
 ENV_NAME = 'BlockChain'
-
-
 # Get the environment and extract the number of actions.
 env = MABlockchainEnv()
 
 nb_agents = 3
 nb_actions = env.nb_actions
 state_dim = (env.max_stake + 1) ** nb_agents
-print(state_dim)
 processor = MABlockchainProcessor()
+print(state_dim)
 
-listQLAgents = ListQLAgents(nb_agents=nb_agents, state_dim=state_dim, nb_actions=nb_actions, processor=processor)
-
-listQLAgents.fit(env=env, nb_steps=2000000, nb_max_episode_steps=200)
+version = '0.9.2.9'
+nb_steps = 2000000
+anneal_steps = int(3.0/4 * nb_steps)
+nb_max_episode_steps=200
+listQLAgents = ListQLAgents(nb_agents=nb_agents, state_dim=state_dim, nb_actions=nb_actions, anneal_steps=anneal_steps, processor=processor, version=version)
+listQLAgents.fit(env=env, nb_steps=nb_steps, nb_max_episode_steps=nb_max_episode_steps)
 

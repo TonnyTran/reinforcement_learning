@@ -44,7 +44,12 @@ listDQNAgents.compile(Adam(lr=1e-3), metrics=['mae'])
 # Okay, now it's time to learn something! We visualize the training here for show, but this
 # slows down training quite a lot. You can always safely abort the training prematurely using
 # Ctrl + C.
-listDQNAgents.fit(env, nb_steps=200000, visualize=True, verbose=2, log_interval=1000, nb_max_episode_steps=500)
+version = '1.0.2'
+nb_steps = 2000000
+nb_max_episode_steps = 200
+anneal_steps = int(3.0/4 * nb_steps)
+
+listDQNAgents.fit(env, nb_steps=nb_steps, version=version, anneal_steps=anneal_steps, visualize=True, verbose=2, log_interval=1000, nb_max_episode_steps=nb_max_episode_steps)
 
 # After training is done, we save the final weights.
 listDQNAgents.save_weights(ENV_NAME)

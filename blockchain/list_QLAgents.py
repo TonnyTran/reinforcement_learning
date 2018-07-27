@@ -1,35 +1,18 @@
-from rl.agents.dqn import DQNAgent, AbstractDQNAgent
-import warnings
 from copy import deepcopy
-
 import numpy as np
 import xlwt
-from keras.callbacks import History
 from rl.agents.tabular_q_learner import QLearner
 
-from rl.callbacks import (
-    CallbackList,
-    TestLogger,
-    TrainEpisodeLogger,
-    TrainIntervalLogger,
-    Visualizer
-)
-
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Flatten
-import math
-
 class ListQLAgents():
-    def __init__(self, nb_agents=3, state_dim=None, nb_actions=None, processor=None, policy=None):
+    def __init__(self, nb_agents=3, state_dim=None, nb_actions=None, anneal_steps=None, processor=None, version=None, policy=None):
 
         # vesion
-        self.version = '0.9.2.4'
-        # vary epsilon greedy policy
+        self.version = version        # vary epsilon greedy policy
         self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
 
         for index in range(nb_agents):
-            self.listDQNAgents[index] = QLearner(state_dim, nb_actions)
+            self.listDQNAgents[index] = QLearner(state_dim, nb_actions, anneal_steps=anneal_steps)
 
         # Parameters.
         self.nb_agents = nb_agents
@@ -76,6 +59,7 @@ class ListQLAgents():
         # open workbook to store result
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
+        sheet_reward = workbook.add_sheet('reward')
         # sheet_step = workbook.add_sheet('step')
 
         episode = np.int16(0)
@@ -83,7 +67,7 @@ class ListQLAgents():
         observation = None
         episode_reward = None
         episode_step = None
-        did_abort = False
+        episode_Q_value = []
         try:
             while self.step < nb_steps:
                 if observation is None:  # start of a new episode
@@ -123,6 +107,10 @@ class ListQLAgents():
                 if self.processor is not None:
                     listActions = self.processor.process_action(listActions)
                 episode_reward += reward
+                sheet_reward.write(self.step % 60000 + 1, self.step / 60000, str(sum(reward)))
+
+                # for culcumsive Q value
+                episode_Q_value.append(sum(reward))
 
                 episode_step += 1
                 self.step += 1
@@ -138,6 +126,9 @@ class ListQLAgents():
                     # print("Reward for this episode: {}".format(episode_reward))
                     # print("Average reward for current episode: {}".format(episode_reward/episode_step))
 
+                    for i_current in range(0, nb_max_episode_steps):
+                        for i_future in range(i_current + 1, nb_max_episode_steps):
+                            episode_Q_value[i_current] += self.listDQNAgents[0].discount_factor ** (i_future - i_current) * episode_Q_value[i_future]
                     # This episode is finished, report and reset.
                     episode_logs = {
                         'episode':episode,
@@ -152,6 +143,9 @@ class ListQLAgents():
                     sheet.write(episode + 1, 2, str(episode_reward[1]))
                     sheet.write(episode + 1, 3, str(episode_reward[2]))
                     sheet.write(episode + 1, 4, str(sum(episode_reward)))
+                    sheet.write(episode + 1, 5, str(sum(episode_Q_value)))
+
+                    episode_Q_value = []
 
                     episode += 1
                     observation = None

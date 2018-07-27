@@ -77,12 +77,14 @@ class MarketValue():
         plt.show()
 
 # marketValue = MarketValue()
-# # marketValue.drawValue(marketValue.listValue)
+# marketValue.drawValue(marketValue.listValue)
 # print(len(marketValue.listValue))
 # print(marketValue.valueMatrixTranfer.shape)
 # print(marketValue.valueMatrixTranfer)
 # listValue = []
-# for i in range(0,500):
+# for i in range(0,3000):
+#     if i%500 == 0:
+#         marketValue.reset()
 #     marketValue.step()
 #     listValue.append(marketValue.currentValue)
 # marketValue.drawValue(listValue)

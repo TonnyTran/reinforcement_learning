@@ -19,14 +19,20 @@ from keras.layers import Dense, Activation, Flatten
 import math
 
 class ListDQNAgents(AbstractDQNAgent):
-    def __init__(self, nb_agents=3, model=None, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100,
-               target_model_update=1e-2, policy=None):
+    def __init__(self, nb_agents=3, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100, version=None,
+                 anneal_steps=None, target_model_update=1e-2, policy=None):
 
         # vesion
-        self.version = '0.9.2.3'
+        self.version = version
         # vary epsilon greedy policy
         self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
+
+        # eGreedy parameters
+        self.init_exp = 0.8
+        self.final_exp = 0.0
+        self.exploration = self.init_exp
+        self.anneal_steps = anneal_steps
 
         for index in range(nb_agents):
             model = Sequential()
@@ -101,6 +107,7 @@ class ListDQNAgents(AbstractDQNAgent):
         # Returns
             A `keras.callbacks.History` instance that recorded the entire training process.
         """
+        # eGreedy parameters
         if not self.compiled:
             raise RuntimeError('Your tried to fit your agent but it hasn\'t been compiled yet. Please call `compile()` before `fit()`.')
         if action_repetition < 1:
@@ -108,6 +115,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
         self.training = True
         self.nb_steps = nb_steps
+        print(self.nb_steps)
 
         # open workbook to store result
         workbook = xlwt.Workbook()
@@ -312,7 +320,8 @@ class ListDQNAgents(AbstractDQNAgent):
             q_values = self.listDQNAgents[index].compute_q_values(state)
             if self.training:
                 if (self.vary_eps):
-                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=(1-self.step*1.0/self.nb_steps))
+                    self.annealExploration()
+                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=(self.exploration))
                 else:
                     action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
             else:
@@ -581,6 +590,10 @@ class ListDQNAgents(AbstractDQNAgent):
         self._on_test_end()
 
         return history
+
+    def annealExploration(self, stategy='linear'):
+        ratio = max((self.anneal_steps - self.step) / float(self.anneal_steps), 0)
+        self.exploration = (self.init_exp - self.final_exp) * ratio + self.final_exp
 
     def _on_train_begin(self):
         """Callback that is called before training begins."

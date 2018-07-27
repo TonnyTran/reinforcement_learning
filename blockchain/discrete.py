@@ -12,9 +12,9 @@ class Discrete(gym.Space):
         self.n = n
         gym.Space.__init__(self, (), np.int64)
     def sample(self):
-        return self.n/3 + gym.spaces.np_random.randint(self.n/3)
+        # return self.n/3 + gym.spaces.np_random.randint(self.n/3)
         #return gym.spaces.np_random.randint(self.n)
-        # return 50
+        return 50
     def contains(self, x):
         if isinstance(x, int):
             as_int = x
