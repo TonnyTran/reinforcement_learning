@@ -96,7 +96,7 @@ class MABlockchainEnv(gym.Env):
 
     def __init__(self):
         self.max_stake = 99
-        self.max_action = 10
+        self.max_action = 6
         self.nb_actions = 2 * self.max_action-1
         self.action_space = spaces.Tuple((ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action)))
         self.observation_space = spaces.Tuple((Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)))
@@ -107,8 +107,8 @@ class MABlockchainEnv(gym.Env):
 
         self.alpha = -0.01
         self.alphaX = -0.01
-        self.ob = 0.005
-        self.os = 0.006
+        self.ob = 0.5
+        self.os = 0.6
         self.list_v = []
 
         self.steps_beyond_done = None
@@ -159,10 +159,8 @@ class MABlockchainEnv(gym.Env):
         for index in range(len(state)):
             if (newListAction[index] > 0):  # selling
                 listRewards[index] = newListAction[index] * self.marketValue.currentValue - self.ob
-                # listRewards[index] = sum(newListAction) * self.marketValue.currentValue - self.ob
             elif (newListAction[index] < 0):
                 listRewards[index] = newListAction[index] * self.marketValue.currentValue - self.os
-                # listRewards[index] = sum(newListAction) * self.marketValue.currentValue - self.os
             else:
                 listRewards[index] = 0
 

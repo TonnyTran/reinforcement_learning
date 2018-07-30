@@ -1,11 +1,6 @@
 import numpy as np
-import gym
-
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Flatten
 from keras.optimizers import Adam
 
-from rl.agents.dqn import DQNAgent
 from rl.policy import BoltzmannQPolicy, MaxBoltzmannQPolicy, EpsGreedyQPolicy
 from rl.memory import SequentialMemory
 from rl.core import Processor
@@ -36,23 +31,23 @@ memory = SequentialMemory(limit=50000, window_length=1)
 policy = EpsGreedyQPolicy(0.1)
 processor = MABlockchainProcessor()
 
+version = '1.1.0'
+nb_steps = 2000000
+nb_max_episode_steps = 200
+anneal_steps = int(2.0/5 * nb_steps)
+
 listDQNAgents = ListDQNAgents(nb_agents=3, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,
-               target_model_update=1e-2, policy=policy)
+               target_model_update=1e-2, version=version, anneal_steps=anneal_steps, policy=policy)
 
 listDQNAgents.compile(Adam(lr=1e-3), metrics=['mae'])
 
 # Okay, now it's time to learn something! We visualize the training here for show, but this
 # slows down training quite a lot. You can always safely abort the training prematurely using
 # Ctrl + C.
-version = '1.0.2'
-nb_steps = 2000000
-nb_max_episode_steps = 200
-anneal_steps = int(3.0/4 * nb_steps)
-
-listDQNAgents.fit(env, nb_steps=nb_steps, version=version, anneal_steps=anneal_steps, visualize=True, verbose=2, log_interval=1000, nb_max_episode_steps=nb_max_episode_steps)
+listDQNAgents.fit(env, nb_steps=nb_steps, visualize=True, verbose=2, log_interval=1000, nb_max_episode_steps=nb_max_episode_steps)
 
 # After training is done, we save the final weights.
 listDQNAgents.save_weights(ENV_NAME)
 
 # Finally, evaluate our algorithm for 5 episodes.
-listDQNAgents.test(env, nb_episodes=5, visualize=True, nb_max_episode_steps=500)
+listDQNAgents.test(env, nb_episodes=5, visualize=True, nb_max_episode_steps=nb_max_episode_steps)

@@ -29,7 +29,7 @@ class ListDQNAgents(AbstractDQNAgent):
         self.listDQNAgents = [None] * nb_agents
 
         # eGreedy parameters
-        self.init_exp = 0.8
+        self.init_exp = 0.9
         self.final_exp = 0.0
         self.exploration = self.init_exp
         self.anneal_steps = anneal_steps

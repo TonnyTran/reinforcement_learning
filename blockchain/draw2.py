@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 from xlrd import open_workbook
 
-book = open_workbook('../results/QL_result_v0.9.2.9.xls')
-book2 = open_workbook('../results/result_v1.0.0.xls')
+book = open_workbook('../results/result_v1.0.3.xls')
+book2 = open_workbook('../results/QL_result_v1.0.4.xls')
 
 sheet = book.sheet_by_index(0)
 sheet2 = book2.sheet_by_index(0)
-interval = 25
+interval = 10
 
 # read header values into the list
 # DDQNkeys = [sheet.cell(0, col_index).value for col_index in xrange(sheet.ncols)]
@@ -25,9 +25,9 @@ for row_index in xrange(1, sheet2.nrows):
     # X.append(int(x))
 
 for ave_index in range(0, len(Y)/interval-1):
-    Y_ave = sum(Y[ave_index*interval:((ave_index+1)*interval-1)])/interval
+    Y_ave = sum(Y[ave_index*interval:((ave_index+1)*interval)]) / interval
     Y_average.append(Y_ave)
-    Y2_ave = sum(Y2[ave_index * interval:((ave_index + 1) * interval - 1)]) / interval
+    Y2_ave = sum(Y2[ave_index * interval:((ave_index + 1) * interval)]) / interval
     Y2_average.append(Y2_ave)
     X.append(ave_index)
 
