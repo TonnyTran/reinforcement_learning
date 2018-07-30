@@ -16,13 +16,23 @@ from rl.callbacks import (
 
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Flatten
-
+import math
 
 class ListDQNAgents(AbstractDQNAgent):
-    def __init__(self, nb_agents=3, model=None, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100,
-               target_model_update=1e-2, policy=None):
+    def __init__(self, nb_agents=3, nb_actions=None, memory=None, processor=None, nb_steps_warmup=100, version=None,
+                 anneal_steps=None, target_model_update=1e-2, policy=None):
 
+        # vesion
+        self.version = version
+        # vary epsilon greedy policy
+        self.vary_eps = True
         self.listDQNAgents = [None] * nb_agents
+
+        # eGreedy parameters
+        self.init_exp = 0.9
+        self.final_exp = 0.0
+        self.exploration = self.init_exp
+        self.anneal_steps = anneal_steps
 
         for index in range(nb_agents):
             model = Sequential()
@@ -97,18 +107,21 @@ class ListDQNAgents(AbstractDQNAgent):
         # Returns
             A `keras.callbacks.History` instance that recorded the entire training process.
         """
+        # eGreedy parameters
         if not self.compiled:
             raise RuntimeError('Your tried to fit your agent but it hasn\'t been compiled yet. Please call `compile()` before `fit()`.')
         if action_repetition < 1:
             raise ValueError('action_repetition must be >= 1, is {}'.format(action_repetition))
 
         self.training = True
+        self.nb_steps = nb_steps
+        print(self.nb_steps)
 
         # open workbook to store result
-        # file_out = open('result.txt', 'wb')
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet('DQN')
-        version = '0.4'
+        # sheet_step = workbook.add_sheet('step')
+
 
         callbacks = [] if not callbacks else callbacks[:]
 
@@ -231,6 +244,14 @@ class ListDQNAgents(AbstractDQNAgent):
                     'info': accumulated_info,
                 }
                 callbacks.on_step_end(episode_step, step_logs)
+
+                # # step reward
+                # sheet_step.write(self.step + 1, 0, str(self.step))
+                # sheet_step.write(self.step + 1, 1, str(episode_reward[0]))
+                # sheet_step.write(self.step + 1, 2, str(episode_reward[1]))
+                # sheet_step.write(self.step + 1, 3, str(episode_reward[2]))
+                # sheet_step.write(self.step + 1, 4, str(sum(episode_reward)))
+
                 episode_step += 1
                 self.step += 1
 
@@ -271,7 +292,7 @@ class ListDQNAgents(AbstractDQNAgent):
         self._on_train_end()
         # close file
         # file_out.close()
-        file_name = 'result_v' + version + '.xls'
+        file_name = 'result_v' + self.version + '.xls'
         if (self.listDQNAgents[0].enable_double_dqn):
             file_name = 'DDQN_' + file_name
         if (self.listDQNAgents[0].enable_dueling_network):
@@ -298,7 +319,11 @@ class ListDQNAgents(AbstractDQNAgent):
         for index in range(self.nb_agents):
             q_values = self.listDQNAgents[index].compute_q_values(state)
             if self.training:
-                action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
+                if (self.vary_eps):
+                    self.annealExploration()
+                    action = self.listDQNAgents[index].policy.select_action_vary(q_values=q_values, eps=(self.exploration))
+                else:
+                    action = self.listDQNAgents[index].policy.select_action(q_values=q_values)
             else:
                 action = self.listDQNAgents[index].test_policy.select_action(q_values=q_values)
             listActions[index] = action
@@ -565,6 +590,10 @@ class ListDQNAgents(AbstractDQNAgent):
         self._on_test_end()
 
         return history
+
+    def annealExploration(self, stategy='linear'):
+        ratio = max((self.anneal_steps - self.step) / float(self.anneal_steps), 0)
+        self.exploration = (self.init_exp - self.final_exp) * ratio + self.final_exp
 
     def _on_train_begin(self):
         """Callback that is called before training begins."

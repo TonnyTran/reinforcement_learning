@@ -1,19 +1,16 @@
-"""
-
-"""
-
-import math
 import gym
 from gym import spaces, logger
 from gym.utils import seeding
 import numpy as np
 from action_space import ActionSpace
+from discrete import Discrete
+from market_value import MarketValue
 
 class BlockchainEnv(gym.Env):
 
     def __init__(self):
         self.action_space = ActionSpace(3)
-        self.observation_space = spaces.Tuple((spaces.Discrete(100), spaces.Discrete(100), spaces.Discrete(100)))
+        self.observation_space = spaces.Tuple((Discrete(100), Discrete(100), Discrete(100)))
 
         # self.seed()
         self.viewer = None
@@ -98,22 +95,24 @@ class BlockchainEnv(gym.Env):
 class MABlockchainEnv(gym.Env):
 
     def __init__(self):
-        self.max_stake = 100
-        self.action_space = spaces.Tuple((ActionSpace(3), ActionSpace(3), ActionSpace(3)))
-        self.observation_space = spaces.Tuple((spaces.Discrete(self.max_stake), spaces.Discrete(self.max_stake), spaces.Discrete(self.max_stake)))
+        self.max_stake = 99
+        self.max_action = 6
+        self.nb_actions = 2 * self.max_action-1
+        self.action_space = spaces.Tuple((ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action)))
+        self.observation_space = spaces.Tuple((Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)))
 
         # self.seed()
         self.viewer = None
         self.state = None
 
-        self.market_value = 1
         self.alpha = -0.01
         self.alphaX = -0.01
-        self.ob = 0.006
-        self.os = 0.005
+        self.ob = 0.5
+        self.os = 0.6
         self.list_v = []
 
         self.steps_beyond_done = None
+        self.marketValue = MarketValue()
 
     def seed(self, seed=None):
         self.np_random, seed = seeding.np_random(seed)
@@ -132,9 +131,9 @@ class MABlockchainEnv(gym.Env):
             action = max(action, (listStates[index] - self.max_stake + 1))
             newListAction[index] = action
 
-        self.market_value = sum(newListAction) * self.alphaX + 1
-        # self.market_value = max(sum(listActions) * self.alpha + self.market_value, 50)
-        self.list_v.append(self.market_value)
+        # self.market_value = sum(newListAction) * self.alphaX + 1
+        # self.market_value = max(sum(listActions) * self.alpha + self.market_value, 0.3)
+        # self.list_v.append(self.market_value)
 
         for index in range(len(state)):
             # # no mining
@@ -145,16 +144,23 @@ class MABlockchainEnv(gym.Env):
                 win_prob = state[index]*1.0/sum(state)
             else:
                 win_prob = 0
+
             if(win_prob > np.random.rand(1)):
                 newListStates[index] = listStates[index] - newListAction[index] + 1
             else:
                 newListStates[index] = listStates[index] - newListAction[index]
 
+        for index in range(len(state)):
+            action = min(listActions[index], listStates[index])
+            action = max(action, (listStates[index] - self.max_stake + 1))
+            newListAction[index] = action
+
             # caculate the reward
+        for index in range(len(state)):
             if (newListAction[index] > 0):  # selling
-                listRewards[index] = newListAction[index] * self.market_value - self.ob
+                listRewards[index] = newListAction[index] * self.marketValue.currentValue - self.ob
             elif (newListAction[index] < 0):
-                listRewards[index] = newListAction[index] * self.market_value - self.os
+                listRewards[index] = newListAction[index] * self.marketValue.currentValue - self.os
             else:
                 listRewards[index] = 0
 
@@ -172,7 +178,7 @@ class MABlockchainEnv(gym.Env):
         self.state = self.observation_space.sample()
         print(self.state)
         self.steps_beyond_done = None
-        self.market_value = 100
+        self.marketValue.reset()
         return np.array(self.state)
 
 

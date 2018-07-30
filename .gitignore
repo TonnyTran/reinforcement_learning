@@ -1,2 +1,4 @@
 .idea/*
 results/*
+blockchain/*.pyc
+blockchain/*.h5f
