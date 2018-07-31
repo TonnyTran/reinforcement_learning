@@ -2,80 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a91551b-9794-4fca-8871-ae660f97d944" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blockchain/discrete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/draw2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/draw_v.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/list_QLAgents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/market_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/ql_blockchain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain/reward_convengence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_NEO/Bittrex_NEOUSD_1h.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_NEO/Bittrex_NEOUSD_1h.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_file/v0.1.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc_file/v0.2.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/092.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/QL_DQN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/QL_DQN_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/Ql-DQN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/const_gama0.8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/eps.0.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/eps.0.9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/eps_vary.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/eps_vary_can.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/eps_vary_pow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/expected_reward.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/reward.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/v0.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw/vary_gama0.8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/.~lock.QL_result_v0.9.2.8.xls#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/.~lock.QL_result_v0.9.2.9.xls#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/.~lock.result_v1.0.0.xls#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/.~lock.result_v1.0.1.xls#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/.~lock.result_v1.0.2.xls#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/DDQN_result_v0.9.1.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/DDQN_result_v0.9.2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/Dueling_DDQN_result_v0.9.2.2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.3.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.4.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.5.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.6.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.7.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.8.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v0.9.2.9.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v1.0.3.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v1.0.4.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/QL_result_v1.0.5.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v0.9.2.2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v0.9.2.3.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v0.9.2.4.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v1.0.0.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v1.0.1.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v1.0.2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/result_v1.0.3.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rl/agents/tabular_q_learner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockchain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draft.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/draw_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draw_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/madql_blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/madql_blockchain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/result.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/state_space.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/DDQN_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/Dueling_DDQN_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/Dueling_DDQN_result0.2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/result.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/result_v0.2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/Dueling_DDQN_result_v0.9.2.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/result_v0.3.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rl/agents/dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/rl/agents/dqn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rl/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/rl/policy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,12 +24,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="50" />
+          <entry key="gitignore" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="PLAIN_TEXT" value="55" />
         </counts>
       </usages-collector>
     </session>
@@ -173,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -273,6 +200,11 @@
             <path>
               <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -442,13 +374,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="27" width="1928" height="1030" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25250396" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25250396" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.32948583" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.37348068" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.37348068" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32991803" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32928178" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -722,7 +653,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
