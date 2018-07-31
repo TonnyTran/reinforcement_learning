@@ -36,7 +36,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
         for index in range(nb_agents):
             model = Sequential()
-            model.add(Flatten(input_shape=(1, 3)))
+            model.add(Flatten(input_shape=(1, nb_agents)))
             model.add(Dense(16, activation='relu'))
             model.add(Dense(16, activation='relu'))
             model.add(Dense(16, activation='relu'))
