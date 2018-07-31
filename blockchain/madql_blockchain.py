@@ -15,7 +15,7 @@ class MABlockchainProcessor(Processor):
         return tuple(list_actions)
 
 ENV_NAME = 'BlockChain'
-nb_agents = 3
+nb_agents = 7
 
 # Get the environment and extract the number of actions.
 env = MABlockchainEnv()
@@ -31,12 +31,12 @@ memory = SequentialMemory(limit=50000, window_length=1)
 policy = EpsGreedyQPolicy(0.1)
 processor = MABlockchainProcessor()
 
-version = '1.1.0'
-nb_steps = 2000000
+version = '1.2.0_7miners'
+nb_steps = 500000
 nb_max_episode_steps = 200
-anneal_steps = int(2.0/5 * nb_steps)
+anneal_steps = 400000
 
-listDQNAgents = ListDQNAgents(nb_agents=3, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,
+listDQNAgents = ListDQNAgents(nb_agents=nb_agents, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,
                target_model_update=1e-2, version=version, anneal_steps=anneal_steps, policy=policy)
 
 listDQNAgents.compile(Adam(lr=1e-3), metrics=['mae'])

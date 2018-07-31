@@ -98,8 +98,10 @@ class MABlockchainEnv(gym.Env):
         self.max_stake = 99
         self.max_action = 6
         self.nb_actions = 2 * self.max_action-1
-        self.action_space = spaces.Tuple((ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action)))
-        self.observation_space = spaces.Tuple((Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)))
+        self.action_space = spaces.Tuple((ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action)
+                                          , ActionSpace(self.max_action), ActionSpace(self.max_action), ActionSpace(self.max_action)))
+        self.observation_space = spaces.Tuple((Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)
+                                               , Discrete(self.max_stake), Discrete(self.max_stake), Discrete(self.max_stake)))
 
         # self.seed()
         self.viewer = None

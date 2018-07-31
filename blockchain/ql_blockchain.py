@@ -26,9 +26,9 @@ state_dim = (env.max_stake + 1) ** nb_agents
 processor = MABlockchainProcessor()
 print(state_dim)
 
-version = '1.1.0'
-nb_steps = 2000000
-anneal_steps = int(2.0/5 * nb_steps)
+version = '1.1.1'
+nb_steps = 500000
+anneal_steps = 400000
 nb_max_episode_steps=200
 listQLAgents = ListQLAgents(nb_agents=nb_agents, state_dim=state_dim, nb_actions=nb_actions, anneal_steps=anneal_steps, processor=processor, version=version)
 listQLAgents.fit(env=env, nb_steps=nb_steps, nb_max_episode_steps=nb_max_episode_steps)
