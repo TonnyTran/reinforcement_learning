@@ -20,13 +20,13 @@ ENV_NAME = 'BlockChain'
 # Get the environment and extract the number of actions.
 env = MABlockchainEnv()
 
-nb_agents = 3
+nb_agents = 9
 nb_actions = env.nb_actions
 state_dim = (env.max_stake + 1) ** nb_agents
 processor = MABlockchainProcessor()
 print(state_dim)
 
-version = '1.1.1'
+version = '1.2.0'
 nb_steps = 500000
 anneal_steps = 400000
 nb_max_episode_steps=200
