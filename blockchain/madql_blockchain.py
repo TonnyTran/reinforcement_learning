@@ -34,7 +34,7 @@ processor = MABlockchainProcessor()
 version = '1.1.0'
 nb_steps = 2000000
 nb_max_episode_steps = 200
-anneal_steps = int(2.0/5 * nb_steps)
+anneal_steps = 400000
 
 listDQNAgents = ListDQNAgents(nb_agents=3, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,
                target_model_update=1e-2, version=version, anneal_steps=anneal_steps, policy=policy)

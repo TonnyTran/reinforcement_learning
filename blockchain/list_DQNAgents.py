@@ -46,7 +46,7 @@ class ListDQNAgents(AbstractDQNAgent):
 
             self.listDQNAgents[index] = DQNAgent(model=model, nb_actions=nb_actions, memory=memory, processor=processor,
                 nb_steps_warmup=nb_steps_warmup, target_model_update=target_model_update, policy=policy,
-                enable_double_dqn=False, enable_dueling_network=False)
+                enable_double_dqn=True, enable_dueling_network=True)
 
         # Parameters.
         self.nb_agents = nb_agents
