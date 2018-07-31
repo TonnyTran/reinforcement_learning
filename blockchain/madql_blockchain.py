@@ -15,7 +15,7 @@ class MABlockchainProcessor(Processor):
         return tuple(list_actions)
 
 ENV_NAME = 'BlockChain'
-nb_agents = 7
+nb_agents = 5
 
 # Get the environment and extract the number of actions.
 env = MABlockchainEnv()
