@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a91551b-9794-4fca-8871-ae660f97d944" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockchain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/list_DQNAgents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/draw2.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draw2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/madql_blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/madql_blockchain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/Dueling_DDQN_result_v1.2.0_7miners.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/Dueling_DDQN_result_v1.2.0_7miners.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="madql_blockchain.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="madql_blockchain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="-457">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -97,8 +97,8 @@
       <file leaf-file-name="blockchain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+            <state relative-caret-position="291">
+              <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#231#2952#0" />
@@ -133,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/blockchain/draw2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="13" />
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -144,8 +144,8 @@
       <file leaf-file-name="draw.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="342">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -208,14 +208,14 @@
         <option value="$PROJECT_DIR$/rl/agents/tabular_q_learner.py" />
         <option value="$PROJECT_DIR$/blockchain/draft.py" />
         <option value="$PROJECT_DIR$/rl/agents/dqn.py" />
-        <option value="$PROJECT_DIR$/blockchain/blockchain.py" />
         <option value="$PROJECT_DIR$/blockchain/ql_blockchain.py" />
         <option value="$PROJECT_DIR$/blockchain/draw_01.py" />
         <option value="$PROJECT_DIR$/blockchain/list_DQNAgents.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/blockchain/draw.py" />
         <option value="$PROJECT_DIR$/blockchain/draw2.py" />
+        <option value="$PROJECT_DIR$/blockchain/blockchain.py" />
         <option value="$PROJECT_DIR$/blockchain/madql_blockchain.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -244,6 +244,11 @@
               <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
@@ -416,9 +421,9 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32991803" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.44805875" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.44805875" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.37355718" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.37355718" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.41028333" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -764,17 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#231#2952#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rl/agents/dqn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -810,20 +804,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="342">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -833,17 +824,31 @@
     <entry file="file://$PROJECT_DIR$/blockchain/draw2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="291">
+          <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#231#2952#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
