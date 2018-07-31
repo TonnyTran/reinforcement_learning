@@ -2,22 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a91551b-9794-4fca-8871-ae660f97d944" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
       <change beforePath="$PROJECT_DIR$/blockchain/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockchain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_0_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_1_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/dqn_2_BlockChain_weights.h5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/draw2.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/draw2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/madql_blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/madql_blockchain.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/results/Dueling_DDQN_result_v1.2.0_7miners.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/Dueling_DDQN_result_v1.2.0_7miners.xls" afterDir="false" />
+=======
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
+<<<<<<< HEAD
+    <session id="1103340414">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+=======
     <session id="-1507579402">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -28,56 +43,46 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="py" value="11" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
+          <entry key="PLAIN_TEXT" value="1" />
+=======
           <entry key="Python" value="11" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="gitignore" value="55" />
+=======
           <entry key="py" value="44" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="PLAIN_TEXT" value="55" />
+=======
           <entry key="Python" value="44" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list_QLAgents.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blockchain/list_QLAgents.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding>
-                <element signature="e#1#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabular_q_learner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rl/agents/tabular_q_learner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="madql_blockchain.py" pinned="false" current-in-tab="true">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-457">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="126">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -85,7 +90,71 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/action_space.py">
+=======
+      <file leaf-file-name="list_QLAgents.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/list_QLAgents.py">
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/draw_01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="madql_blockchain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blockchain/madql_blockchain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-457">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="360">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+=======
+            <state relative-caret-position="407">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2153">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -97,32 +166,46 @@
       <file leaf-file-name="blockchain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="291">
               <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
+=======
+            <state relative-caret-position="329">
+              <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#231#2952#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_DQNAgents.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="54">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+=======
             <state relative-caret-position="148">
               <caret line="215" selection-start-line="215" selection-end-line="215" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
                 <element signature="e#6996#7089#0" />
               </folding>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dqn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rl/agents/dqn.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="252">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+=======
             <state relative-caret-position="171">
               <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
             </state>
@@ -137,22 +220,38 @@
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+=======
       <file leaf-file-name="draw.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="342">
               <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+=======
+            <state relative-caret-position="323">
+              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
       <file leaf-file-name="draw_01.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/draw_01.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,6 +264,7 @@
           </provider>
         </entry>
       </file>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -216,14 +316,29 @@
         <option value="$PROJECT_DIR$/blockchain/draw2.py" />
         <option value="$PROJECT_DIR$/blockchain/blockchain.py" />
         <option value="$PROJECT_DIR$/blockchain/madql_blockchain.py" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/blockchain/ql_blockchain.py" />
+=======
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
+    <option name="x" value="-4" />
+    <option name="y" value="27" />
+    <option name="width" value="1928" />
+    <option name="height" value="1030" />
+=======
     <option name="x" value="468" />
     <option name="y" value="72" />
     <option name="width" value="1396" />
     <option name="height" value="1012" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -243,6 +358,9 @@
             <path>
               <item name="reinforcement_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,6 +378,7 @@
               <item name="reinforcement_learning" type="462c0819:PsiDirectoryNode" />
               <item name="rl" type="462c0819:PsiDirectoryNode" />
               <item name="agents" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
             </path>
           </expand>
           <select />
@@ -309,6 +428,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="draw2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="reinforcement_learning" />
@@ -327,6 +449,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="draw_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="reinforcement_learning" />
@@ -345,6 +470,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="madql_blockchain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="reinforcement_learning" />
@@ -363,6 +491,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="ql_blockchain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="reinforcement_learning" />
@@ -381,6 +512,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.draw_01" />
@@ -413,15 +547,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-4" y="27" width="1928" height="1030" extended-state="6" />
+=======
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17576419" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32991803" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32948583" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25250396" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.32948583" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.44805875" />
+=======
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.37348068" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32991803" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32928178" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.44805875" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.41028333" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+=======
+      <window_info anchor="bottom" id="Run" order="6" weight="0.44805875" />
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.37355718" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -443,6 +599,7 @@
       <window_info anchor="bottom" id="Find" order="5" weight="0.32948583" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.37355718" />
       <window_info id="Favorites" order="0" side_tool="true" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -471,6 +628,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
     <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/xlrd/book.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -604,10 +763,11 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
     <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/discrete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="252">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -685,11 +845,27 @@
     <entry file="file://$PROJECT_DIR$/blockchain/state_space.py" />
     <entry file="file://$PROJECT_DIR$/blockchain/action_space.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="162">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
     <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/gym/spaces/tuple_space.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -711,13 +887,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/h5py/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/h5py/__init__.py" />
     <entry file="file://$USER_HOME$/anaconda2/envs/tensorflow/lib/python2.7/site-packages/xlrd/book.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -751,24 +921,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/list_QLAgents.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+=======
         <state relative-caret-position="266">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="e#1#26#0" expanded="true" />
           </folding>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rl/agents/tabular_q_learner.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+=======
         <state relative-caret-position="266">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="36" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/blockchain/list_DQNAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#231#2952#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
     <entry file="file://$PROJECT_DIR$/rl/agents/dqn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -789,6 +991,7 @@
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
           </folding>
         </state>
       </provider>
@@ -806,33 +1009,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="38">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="126">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+=======
+        <state relative-caret-position="407">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/draw.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="342">
           <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="266">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="36" />
+=======
+        <state relative-caret-position="323">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/draw2.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="266">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+=======
         <state relative-caret-position="152">
           <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="291">
           <caret line="105" column="97" selection-start-line="105" selection-start-column="97" selection-end-line="105" selection-end-column="97" />
           <folding>
@@ -849,6 +1081,32 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="132">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/blockchain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2153">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+>>>>>>> 150c70e328943bbf2b0ea7511c6caf8204cca149
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+>>>>>>> 320924aa44e94f4e81454954132c8ba4505cad2a
         </state>
       </provider>
     </entry>
