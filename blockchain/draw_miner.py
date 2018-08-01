@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from xlrd import open_workbook
 
-interval = 50
+interval = 10
 book = open_workbook('../results/Dueling_DDQN_result_v1.1.0.xls')
 book2 = open_workbook('../results/Dueling_DDQN_result_v1.2.0_5miners.xls')
 book3 = open_workbook('../results/Dueling_DDQN_result_v1.2.0_7miners.xls')

@@ -31,10 +31,10 @@ memory = SequentialMemory(limit=50000, window_length=1)
 policy = EpsGreedyQPolicy(0.1)
 processor = MABlockchainProcessor()
 
-version = '1.2.0_9miners'
-nb_steps = 500000
+version = '1.2.1_9miners'
+nb_steps = 1000000
 nb_max_episode_steps = 200
-anneal_steps = 400000
+anneal_steps = 200000
 
 listDQNAgents = ListDQNAgents(nb_agents=nb_agents, nb_actions=nb_actions, memory=memory, processor=processor, nb_steps_warmup=100,
                target_model_update=1e-2, version=version, anneal_steps=anneal_steps, policy=policy)
