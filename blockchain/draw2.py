@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 from xlrd import open_workbook
 
-book = open_workbook('../results/Dueling_DDQN_result_v1.1.0.xls')
-book2 = open_workbook('../results/Dueling_DDQN_result_v1.2.0_7miners.xls')
+book = open_workbook('../results/Dueling_DDQN_result_v1.2.0_5miners.xls')
+book2 = open_workbook('../results/Dueling_DDQN_result_v1.2.1_5miners.xls')
 
 sheet = book.sheet_by_index(0)
 sheet2 = book2.sheet_by_index(0)
-interval = 10
+interval = 20
 
 # read header values into the list
 # DDQNkeys = [sheet.cell(0, col_index).value for col_index in xrange(sheet.ncols)]
